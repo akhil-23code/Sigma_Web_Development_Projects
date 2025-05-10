@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OveFlow Property</title>
+    <style>
+        .box {
+            border: 5px solid red;
+            box-shadow: 5px 5px 5px blue;
+            width: 30vw;
+            height: 10vh;
+            overflow: scroll;
+        }
+
+        .box1 {
+            border: 5px solid red;
+            box-shadow: 5px 5px 5px blue;
+            width: 30vw;
+            height: 10vh;
+            /* automaticaly scroll bar appears and disappears */
+            overflow: auto;
+        }
+
+        .box2 {
+            border: 5px solid red;
+            box-shadow: 5px 5px 5px blue;
+            width: 30vw;
+            height: 10vh;
+            overflow: auto;
+            /* horizontal bar */
+            white-space: nowrap;
+        }
+
+        .box3 {
+            border: 5px solid red;
+            box-shadow: 5px 5px 5px blue;
+            width: 30vw;
+            height: 10vh;
+            overflow: auto;
+            /* horizontal bar  + 3 dots*/
+            /* also kep your cursor on th content to allow the web to show thee content preview */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .box4 {
+            border: 5px solid red;
+            box-shadow: 5px 5px 5px blue;
+            width: 20vw;
+            height: 10vh;
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* or  */
+            overflow: hidden scroll;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vitae quae deleniti itaque. Odit
+        vel quis
+        reiciendis error beatae id architecto voluptate blanditiis, illo eligendi iusto voluptas sint deserunt molestiae
+        aliquam eaque saepe corporis iste quasi neque est rerum perspiciatis eius! Eius sapiente eaque quam consectetur
+        pariatur laborum ut autem sed sit, expedita doloremque, ab quos debitis tempora eveniet? Tenetur impedit
+        quisquam quaerat rerum, porro provident architecto rem perferendis, optio accusantium voluptatem odit nulla
+        atque dolorem iusto libero.
+    </div>
+    <div class="box1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+        nobis doloremque reprehenderit omnis excepturi adipisci molestiae animi repudiandae possimus, corporis voluptas
+        facere. Odit eos maxime similique dicta beatae, architecto commodi error quod distinctio laborum iure unde omnis
+        animi eum repellat esse vitae ut? Corporis assumenda quidem accusamus itaque minima? Illum doloribus sunt optio
+        voluptatem nesciunt veritatis numquam modi accusamus quisquam ea laborum non, facere, esse, laboriosam commodi
+        alias nostrum porro.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+        nobis doloremque reprehenderit omnis excepturi adipisci molestiae animi repudiandae possimus, corporis voluptas
+        facere. Odit eos maxime similique dicta beatae, architecto commodi error quod distinctio laborum iure unde omnis
+        animi eum repellat esse vitae ut? Corporis assumenda quidem accusamus itaque minima? Illum doloribus sunt optio
+        voluptatem nesciunt veritatis numquam modi accusamus quisquam ea laborum non, facere, esse, laboriosam commodi
+        alias nostrum porro.
+    </div>
+    <div class="box3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vitae quae deleniti itaque. Odit
+        vel quis
+        reiciendis error beatae id architecto voluptate blanditiis, illo eligendi iusto voluptas sint deserunt molestiae
+        aliquam eaque saepe corporis iste quasi neque est rerum perspiciatis eius! Eius sapiente eaque quam consectetur
+        pariatur laborum ut autem sed sit, expedita doloremque, ab quos debitis tempora eveniet? Tenetur impedit
+        quisquam quaerat rerum, porro provident architecto rem perferendis, optio accusantium voluptatem odit nulla
+        atque dolorem iusto libero.
+    </div>
+    <div class="box4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vitae quae deleniti itaque. Odit
+        vel quis
+        reiciendis error beatae id architecto voluptate blanditiis, illo eligendi iusto voluptas sint deserunt molestiae
+        aliquam eaque saepe corporis iste quasi neque est rerum perspiciatis eius! Eius sapiente eaque quam consectetur
+        pariatur laborum ut autem sed sit, expedita doloremque, ab quos debitis tempora eveniet? Tenetur impedit
+        quisquam quaerat rerum, porro provident architecto rem perferendis, optio accusantium voluptatem odit nulla
+        atque dolorem iusto libero.
+    </div>
+</body>
+
+</html>

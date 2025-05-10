@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: yellow;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* ID Selector */
+        #this{
+            background-color: green;
+        }
+        /* Child Selector */
+        div > p{
+            color: blue;
+            background-color: blanchedalmond;
+        }
+        /* Descedant Selector */
+        /* div k andr aricle hona chahiye bas (not child only grandchildren also invited) */
+        div article{    
+            color: blueviolet;
+            background-color: aliceblue;
+        }
+        /* universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+         a:visited{
+            color: yellowgreen;
+         }
+         a:link{
+            color: black;
+         }
+         /* hover over the link pe color change hona */
+         a:hover{
+            background-color: blue;
+         }
+         a:active{
+            background-color: black;
+         }
+         /* p:first-child{
+            background-color: purple;
+         } */
+
+    </style>
+</head>
+<body>
+    
+    <div class="red">
+        I'm a div
+    </div>
+
+    <div id="this">
+        I'm another div
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div> <main>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur eligendi nulla placeat modi excepturi natus asperiores reiciendis, impedit nisi alias doloribus accusamus!</P> </main>
+    </div>
+
+    <div>
+        <p>
+        <article>
+            Lorem ipsum dolor sit amet.
+        </article>
+        </p>
+    </div>
+
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+
+    <main>
+        <p>This is First</p>
+        <p>This is second</p>
+    </main>
+</body>
+</html>

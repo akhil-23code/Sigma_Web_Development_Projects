@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+
+        /* .box::first-line{
+            color: yellowgreen;
+        } */
+
+        
+        /* .box::first-letter{
+            color: purple;
+            background-color: yellow;
+            font-size: 200px;
+        } */
+
+        /*.box::first-letter{
+            transform: uppercase;
+        } */
+
+
+        /* boxes k andr ka saara element */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+
+
+        /* Attribute selectors */
+        /* [fun-ish = "happy"]{
+            background-color: rgb(174, 174, 235);
+        } */
+
+
+        /* grouping */
+        /* p,a,.box,[fun-insh="happy"]{
+            padding: 100px;
+        } */
+
+
+        /* .box:nth-child(even){
+            background-color: rgb(134, 134, 178);
+        } */
+        /* .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+
+        /* Pseudo elements */
+        /* CSS k thru data ko dynamically bhi insert kiya ja sakta hai   --  before and after*/
+        /* .boxes::before{
+            content: "harry is good";
+        }
+        .boxes::after{
+            content: "sigma batch OP";
+            background-color: rgb(57, 221, 221);
+        } */
+
+
+
+        /* selection par CSS  */
+        ::selection{
+            background-color: black;
+            color: cyan;
+        }
+
+
+
+        input::placeholder{
+            color: blue;
+            font-size:medium;
+            width: 30px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">hey! I am a box. Lorem23</div>
+        <div class="box" fun-ish="happy">hey! I am a box.</div>
+        <div class="box">hey! I am a box.</div>
+    </div>
+
+    <input type="text" placeholder="Type your text here.">
+</body>
+</html>

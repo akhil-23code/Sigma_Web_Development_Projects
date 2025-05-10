@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* text-align: center; */
+            box-sizing: border-box;
+            background-color: aquamarine;
+            border: 2px solid red;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+        }
+        .box1{
+            box-sizing: border-box;
+            background-color: aquamarine;
+            border: 2px solid red;
+            /* width: 233px; */
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            /* top-bottom ki margin is 23 px and left-right ki margin is auto */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box.
+    </div>
+    <div class="box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis natus eaque eius quo accusantium sed minus, deserunt molestias vel velit neque dolorum, facilis eos vero repudiandae distinctio. Beatae nemo error iure nam repellat nesciunt voluptatum possimus id. Provident cumque consequatur, odio maxime pariatur ducimus eveniet qui dolores facilis at reiciendis ipsam, impedit aspernatur molestias nam!
+    </div>
+
+</body>
+</html>

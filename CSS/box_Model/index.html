@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: cyan;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: blue solid;
+            height: 200px;
+            /* it means 200 = content+padding+border+margin */
+            box-sizing: border-box; 
+            /* it means 200 = content+padding+border     margin alag se */
+        }
+        /* margin-collapse check karlo */
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 5px;
+            border: black solid;
+            height: 200px;
+            box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I'm a box
+    </div>
+    <div class="box box2">
+        I'm another box
+    </div>
+</body>
+</html>

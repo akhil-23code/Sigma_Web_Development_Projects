@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 5px solid red;
+            box-sizing: border-box;
+            display: flex;
+
+            /* justify-content: center; */
+            /* there is no justify-items: in flexbox */
+
+            /* for single line  */
+            align-items: center;
+            /* for multiple lines */
+            /* align-content: center; */
+
+            /* gap: 30px; */
+            /* row-gap: 40px; */
+            /* column-gap:100px; */
+            gap: 40px 60px;
+
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+
+
+            /* flex-flow: <flex-direction> <flex-wrap>; */
+            /* flex-flow: row wrap; */
+        }
+
+        .item {
+            width: 92px;
+            height: 92px;
+            /* margin :10px; */
+            border: 5px solid black;
+            background-color: blueviolet;
+
+            /* default flex-grow: is 0; */
+            /* flex-grow: 0; */
+        }
+        .item1{
+            /* flex-grow: 2; */
+
+            /* remove wrap foe flex-shrink */
+            /* flex-shrink: 4; */
+
+
+            /* single line hai toh mai align content ko comment kar */
+            align-self: flex-start;
+        }
+        .item5{
+            align-self: flex-end;
+        }
+
+
+/* item pe lagne wala flexbox -- order */
+            .order1 {
+                 /* order-highest = 0, above 0 i.e 1,2 are least order */
+                /* order: 1; */
+            }
+            .ordernew{
+                /* order: -1; */
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1 order1">1</div>
+        <div class="item item2 order2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item item5">5</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item ordernew">new</div>
+    </div>
+</body>
+
+</html>
