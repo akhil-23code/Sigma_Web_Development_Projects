@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing the post request</title>
+</head>
+<body>
+    goto console
+    <script>
+        async function testPost() {
+            let a = await fetch("/",{method: "POST"})
+            // let a = await fetch("/",{method: "PUT"})
+            // let a = await fetch("/",{method: "DELETE"})
+
+
+            //fetch("/") "/" because it is the same path given in my app.post() in main.js
+            let b = await a.text()
+            console.log("Post request HIT",b);
+        }
+        testPost()
+    </script>
+</body>
+</html>

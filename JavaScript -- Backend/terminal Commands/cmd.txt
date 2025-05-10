@@ -1,0 +1,82 @@
+#video87
+node --version
+npm --version
+
+TO RUN:
+    node ./server.js
+    
+//this is the best way to run a javaScript code in the backend 
+// but to  do a full-fleged project initialise this as npm project
+
+why npm? -- you can import as many packages for the Project
+
+Project initialisation as npm project:
+    npm init 
+    -answer some ques to create your "package.json" file -- npm project
+    //to skip the ques:  npm init -y
+
+installing packages examples: 
+    npm i slugify
+    npm install slugify express
+    npm i express@4 //version 4 
+    npm i --global nodemon   // install the package for the whole pc 
+
+node_modules --folder will contain all the packages of my project
+
+funFact: if u delte node_modules now by just writing 
+         npm install    in the terminal
+         this will install all those packages that are in my project dependencies
+
+
+work on diff node versions
+    nvm install 12  
+    nvm install 16
+    nvm use 16
+
+
+
+
+#video86
+create node_modules:
+    2Types: CommonJS and EcmaScript ES6  -- (both syntax(s) are different)
+    use:ES6  (because the modules loaded from ES6 are loaded asynchronously) whereas CommonJS loads synchronously
+    default : CommonJS, for ES6: type -- "type":"module", in package.json
+
+    Ex: const http = require('node:http'); //CommonJS script for importing modules
+        import {a,b} from "./myServer.js"             //ES6 script for importing the modules
+        import anyDefault from "./myServer.js"
+
+
+
+#video88
+    To start the server automatically -- nodemon main.js
+
+
+#habits
+    goto express website : take there hello world examle for the minimal express app for initials
+    
+
+#video92
+    npm install ejs
+    github for using ejs with express : https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+    ..
+    .
+    bootstrap se components ka template lo
+    aur ejs files pe paste kardo 
+    aur ejs k include method se main page pe serve karlo
+
+
+#video96
+    Mongoose - creates conn btw mongodb and nodejs 
+    npm i mongoose
+
+    if anyone comes to this url : localhost:3000/  -- to need to insert the database 
+    1. create models folder and Todo.js   -- create schema here (look into the docs for this referance)
+    2. in main.js -- app.get('/',()=>{
+                         const todo = new Todo({title: "---", desc: "---", isDone: "--"});
+                         todo.save
+                     })
+        A constructor is created to upload the data in the databse todo always when reload is done.
+
+    To run scripts: type this in package.json file: "dev": "nodemon main.js"
+    and in terminal try: npm run dev
